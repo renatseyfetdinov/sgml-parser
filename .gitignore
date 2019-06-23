@@ -3,3 +3,7 @@
 ################################################################################
 
 /.vs
+/Documents
+/Sgml parser/bin/Debug/netcoreapp2.2
+/Sgml parser/obj
+/Sgml parser/Sgml parser.csproj.user
