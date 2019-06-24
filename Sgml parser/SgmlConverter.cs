@@ -41,7 +41,7 @@ namespace Sgml_parser
             string value = reader.ReadToEnd();
             foreach(string item in attachmemtTags)
             {
-                value = Regex.Replace(value, @"<TEXT>(?>.*?</TEXT>)", m =>
+                value = Regex.Replace(value, @"<"+item+">(?>.*?</"+item+">)", m =>
                 {
                     logger.LogTrace("Binary content converted to base64");
                     string valueToReplace = m.Groups[0].Value;
